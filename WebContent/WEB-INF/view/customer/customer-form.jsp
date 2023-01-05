@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>CRM | Save Custome</title>
+<title>CRM | Save Customer</title>
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath }/resources/css/style.css">
 <link type="text/css" rel="stylesheet"
@@ -21,10 +21,14 @@
 
 
 		<div id="container">
-			<h3>Save Customer</h3>
+			<h3>${FORM_TITLE }</h3>
 
 			<form:form action="saveCustomer" modelAttribute="customer"
 				method="POST">
+				
+				<!-- Need to associate this data with customer id -->
+				<form:hidden path="id"/>
+				
 				<table>
 					<tbody>
 						<tr>

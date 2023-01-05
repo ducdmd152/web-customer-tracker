@@ -11,22 +11,26 @@ import ducdmd.dao.CustomerDAO;
 import ducdmd.entity.Customer;
 
 @Service
+@Transactional
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
 	private CustomerDAO customerDAO;
 	
 	@Override
-	@Transactional
 	public List<Customer> getCustomers() {
 		
 		return customerDAO.getCustomers();
 	}
 
 	@Override
-	@Transactional
 	public void saveCustomer(Customer customer) {
 		
 		customerDAO.saveCustomer(customer);
+	}
+
+	@Override
+	public Customer getCustomer(int customerId) {		
+		return customerDAO.getCustomer(customerId);
 	}	
 }
