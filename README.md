@@ -27,7 +27,8 @@
 - This web is tested for screens and features on desktops; not yet for mobile.
 
 ## Screens
-  
+  ![Login Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/login.png?raw=true).
+  ![Home Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/list.png?raw=true).
 
 ## Technology
 
@@ -56,8 +57,8 @@
 
 ## How can Get Started
 
-- 1. Download the source code.
-- 2. Database setup:
+- Download the source code.
+- Database setup:
     - Create the user & database with [scripts](https://github.com/ducdmd152/web-customer-tracker/tree/main/sql-scripts).
     - Customize the content in [src/main/resources/application.properties](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/application.properties) for adapting to your case.
    
