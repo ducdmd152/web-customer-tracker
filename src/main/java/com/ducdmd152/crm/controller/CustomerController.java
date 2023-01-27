@@ -15,7 +15,7 @@ import com.ducdmd152.crm.customer.Customer;
 import com.ducdmd152.crm.customer.CustomerService;
 
 @Controller
-@RequestMapping("/customer")
+@RequestMapping("/customers")
 public class CustomerController {
 	// need to inject the customer dao
 	@Autowired
@@ -26,29 +26,26 @@ public class CustomerController {
 		List<Customer> customers = customerService.getCustomers();
 		model.addAttribute("customers", customers);
 		
-		return "customer/list-customers";
+		return "customers/list-customers";
 	}
 	
 	@GetMapping("/showFormForAdd")
 	public String showFormForAdd(Model model) {
 		Customer customer = new Customer();
 		
+		customer.setId(0);
 		model.addAttribute(customer);
 		model.addAttribute("FORM_TITLE","Create customer");
 		
-		return "list-customers";
+		return "customers/customer-form";
 	}
 	
-	@PostMapping("/saveCustomer")
+	@PostMapping("/save")
 	public String saveCustomer(
 			@ModelAttribute("customer") Customer customer,
 			Model model) {
-//		System.out.println("Customer ID: " + customer.getId());
-//		customer.setId(7);
-//		System.out.println("Customer ID: " + customer.getId());
 		customerService.saveCustomer(customer);
-//		System.out.println("Customer ID: " + customer.getId());
-		return "redirect:/customer/list";
+		return "redirect:/customers/list";
 	}
 	
 	@GetMapping("/showFormForUpdate")
@@ -58,9 +55,8 @@ public class CustomerController {
 		Customer customer = customerService.getCustomer(customerId);
 				
 		model.addAttribute(customer);
-		model.addAttribute("FORM_TITLE","Update customer");
 		
-		return "customer/customer-form";
+		return "customers/customer-form";
 	}
 	
 	@GetMapping("/deleteCustomer")
@@ -71,6 +67,6 @@ public class CustomerController {
 		// delete the customer
 		customerService.deleteCustomer(customerId);
 		
-		return "redirect:/customer/list";
+		return "redirect:/customers/list";
 	}
 }

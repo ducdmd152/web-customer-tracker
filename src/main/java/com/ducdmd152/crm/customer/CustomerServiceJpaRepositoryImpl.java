@@ -16,7 +16,7 @@ public class CustomerServiceJpaRepositoryImpl implements CustomerService {
 	
 	@Override
 	public List<Customer> getCustomers() {
-		return customerJpaRepository.findAll();
+		return customerJpaRepository.findAllByOrderByLastNameAsc();
 	}
 
 	@Override

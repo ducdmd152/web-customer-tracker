@@ -11,6 +11,6 @@ public class HomeController {
 
 	@RequestMapping("/")
 	public RedirectView showHome(Model model) {
-        return new RedirectView("customer/list");
+        return new RedirectView("customers/list");
 	}
 }
