@@ -45,6 +45,17 @@
 				</tr>
 			</tbody>
 		</table>
+		
+		<hr>
+		<form action="#" th:action="@{/logout}"
+						method="POST">
+			<button type="submit" class="btn btn-outline-info">Logout</button>
+		</form>
+		<hr>
+		<a th:href="@{/customers/list}"
+			class="">
+			Back to home
+		</a>
 	</div>
 	
 </body>
