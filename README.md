@@ -13,7 +13,7 @@
 
 | # | Resource | Description |
 | --- | --- | --- |
-| 1 | [Customer Management](https://github.com/ducdmd152/web-customer-tracker/R) | The repo of my web app for Customer Management context. |
+| 1 | [Customer Management](https://github.com/ducdmd152/web-customer-tracker) | The repo of my web app for Customer Management context. |
 | 2 | [MVC2 Notebook](https://ducdmd152.github.io/PRJ301/PRJ301HandbookResources/MVC2%20a3c4b9344b0e4f0bb4711b98b5a9a6ed.html) | My self-notes on the learning path for the flow and something related MVC2 model. |
 
 ## Description
@@ -26,8 +26,8 @@
 - This web is tested for screens and features on desktops; not yet for mobile.
 
 ## Screens
-  ![Login Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/login.png?raw=true).
-  ![Home Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/list.png?raw=true).
+  ![Login Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/login.png?raw=true)
+  ![Home Page](https://github.com/ducdmd152/web-customer-tracker/blob/main/src/main/resources/static/images/list.png?raw=true)
 
 ## Technology
 
