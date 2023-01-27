@@ -1,6 +1,5 @@
 # 👨‍🦱 Customer Management
 ### Author: **[Duc Dao](https://beacons.ai/ducdmd152)**
-### #javawebapplicationdevelopment
 --------------------------------------------------
 ## Table of Contents
 - [Resources](#resources)
