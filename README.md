@@ -13,7 +13,7 @@
 
 | # | Resource | Description |
 | --- | --- | --- |
-| 1 | [Customer Management](https://github.com/ducdmd152/BookStoreManagement_1.0) | The documentation about my web app for Customer Management context. |
+| 1 | [Customer Management](https://github.com/ducdmd152/web-customer-tracker/R) | The repo of my web app for Customer Management context. |
 | 2 | [MVC2 Notebook](https://ducdmd152.github.io/PRJ301/PRJ301HandbookResources/MVC2%20a3c4b9344b0e4f0bb4711b98b5a9a6ed.html) | My self-notes on the learning path for the flow and something related MVC2 model. |
 
 ## Description
